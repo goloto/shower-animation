@@ -1,0 +1,9 @@
+.complex-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.complex-header h3 {
+    margin-top: 0;
+}
