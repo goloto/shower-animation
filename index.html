@@ -178,6 +178,43 @@
         </div>
     </section>
 
+    <section class="slide slide__transition-delay">
+        <h2>Transition</h2>
+        <h3><code><span class="css_property">transition-delay</span></code></h3>
+
+        <div class="rows">
+            <div class="row">
+                <code-block>
+                    <code-block>
+                        <code><span class="css_selector">.button</span> {</code>
+                        <code-offset>
+                            <code><span class="css_comment">/.../</span></code>
+                            <code>
+                                <span class="css_property">transition</span>: all 1s ease-in
+                                <mark>
+                                    <span class="css_numeric">
+                                        <input
+                                          onchange="TransitionSlide.changeDelay()"
+                                          value="1"
+                                          min="1"
+                                          max="9"
+                                          autofocus="true"
+                                          type="number"
+                                        >
+                                    </span>s
+                                </mark>;
+                            </code>
+                        </code-offset>
+                        <code>}</code>
+                    </code-block>
+                </code-block>
+            </div>
+            <div class="row row_centered">
+                <button class="aqua-button">Hover me!</button>
+            </div>
+        </div>
+    </section>
+
     <section class="slide">
         <h2>Transition</h2>
         <h3><code><span class="css_property">transition-property</span></code></h3>

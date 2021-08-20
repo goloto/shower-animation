@@ -23,4 +23,11 @@ class TransitionSlide {
 
     button.style.transition = `${input.value}s ease-in`;
   }
+
+  static changeDelay() {
+    const button = document.querySelector('.slide__transition-delay button');
+    const input = document.querySelector('.slide__transition-delay input');
+
+    button.style.transition = `1s ease-in ${input.value}s`;
+  }
 }
