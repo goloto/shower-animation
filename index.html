@@ -28,9 +28,15 @@
                     <code-block>
                         <code><span class="css_selector">button</span> {</code>
                         <code-offset>
-                            <code><span class="css_property">padding</span>: <span class="css_numeric">10</span>px;</code>
-                            <code><span class="css_property">background-color</span>: aquamarine;</code>
-                            <code><span class="css_property">border-radius</span>: <span class="css_numeric">4</span>px;</code>
+                            <code>
+                                <span class="css_property">padding</span>: <span class="css_numeric">10</span>px;
+                            </code>
+                            <code>
+                                <span class="css_property">background-color</span>: aquamarine;
+                            </code>
+                            <code>
+                                <span class="css_property">border-radius</span>: <span class="css_numeric">4</span>px ;
+                            </code>
                         </code-offset>
                         <code>}</code>
                     </code-block>
@@ -38,20 +44,29 @@
 
                 <div id="hover__hover-styles">
                     <code-block>
-                        <code><span class="css_selector">button<mark>:hover</mark></span> {</code>
+                        <code>
+                            <span class="css_selector">button<mark>:hover</mark></span> {
+                        </code>
                         <code-offset>
-                            <code><span class="css_property">background-color</span>: mediumaquamarine;</code>
+                            <code>
+                                <span class="css_property">background-color</span>: mediumaquamarine;
+                            </code>
                         </code-offset>
                         <code>}</code>
                     </code-block>
                 </div>
             </div>
             <div class="row row_centered">
-                <button class="hover__button" onmouseover="showHoverStyles()" onmouseleave="hideHoverStyles()">Hover me!</button>
+                <button
+                  class="hover__button"
+                  onmouseover="HoverSlide.showHoverStyles()"
+                  onmouseleave="HoverSlide.hideHoverStyles()"
+                >
+                    Hover me!
+                </button>
             </div>
         </div>
 
-        <script src="slides/Hover/scripts.js"></script>
         <link rel="stylesheet" href="slides/Hover/styles.css">
     </section>
 
@@ -64,9 +79,15 @@
                     <code-block>
                         <code><span class="css_selector">button</span> {</code>
                         <code-offset>
-                            <code><span class="css_property">padding</span>: <span class="css_numeric">10</span>px;</code>
-                            <code><span class="css_property">background-color</span>: aquamarine;</code>
-                            <code><span class="css_property">border-radius</span>: <span class="css_numeric">4</span>px;</code>
+                            <code>
+                                <span class="css_property">padding</span>: <span class="css_numeric">10</span>px;
+                            </code>
+                            <code>
+                                <span class="css_property">background-color</span>: aquamarine;
+                            </code>
+                            <code>
+                                <span class="css_property">border-radius</span>: <span class="css_numeric">4</span>px;
+                            </code>
                             <code>
                                 <mark>
                                     <span class="css_property">transition</span>: all <span class="span css_numeric">2</span>s ease-in
@@ -81,14 +102,22 @@
                     <code-block>
                         <code><span class="css_selector">button:hover</span> {</code>
                         <code-offset>
-                            <code><span class="css_property">background-color</span>: mediumaquamarine;</code>
+                            <code>
+                                <span class="css_property">background-color</span>: mediumaquamarine;
+                            </code>
                         </code-offset>
                         <code>}</code>
                     </code-block>
                 </div>
             </div>
             <div class="row row_centered">
-                <button class="transition__button" onmouseover="showTransitionStyles()" onmouseleave="hideTransitionStyles()">Hover me!</button>
+                <button
+                  class="transition__button"
+                  onmouseover="TransitionSlide.showTransitionStyles()"
+                  onmouseleave="TransitionSlide.hideTransitionStyles()"
+                >
+                    Hover me!
+                </button>
             </div>
         </div>
 
@@ -129,7 +158,19 @@
                         <code-offset>
                             <code><span class="css_comment">/.../</span></code>
                             <code>
-                                <span class="css_property">transition</span>: all <mark><span class="css_numeric"><input onchange="changeDuration()" value="1" min="1" max="9" autofocus="true" type="number"></span>s</mark> ease-in;
+                                <span class="css_property">transition</span>: all
+                                <mark>
+                                    <span class="css_numeric">
+                                        <input
+                                          onchange="TransitionSlide.changeDuration()"
+                                          value="1"
+                                          min="1"
+                                          max="9"
+                                          autofocus="true"
+                                          type="number"
+                                        >
+                                    </span>s
+                                </mark> ease-in;
                             </code>
                         </code-offset>
                         <code>}</code>
@@ -141,7 +182,6 @@
             </div>
         </div>
 
-        <script src="slides/Transition_transition-duration/scripts.js"></script>
         <link rel="stylesheet" href="slides/Transition_transition-duration/styles.css">
     </section>
 
@@ -176,8 +216,8 @@
 
     <div class="progress"></div>
 
+    <script src="scripts.js"></script>
     <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
 
 </body>
 </html>
