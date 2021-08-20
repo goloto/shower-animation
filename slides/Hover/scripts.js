@@ -1,7 +1,7 @@
 function showHoverStyles() {
-  document.querySelector('#hover-styles').classList.add('show');
+  document.querySelector('#hover__hover-styles').classList.add('show');
 }
 
 function hideHoverStyles() {
-  document.querySelector('#hover-styles').classList.remove('show');
+  document.querySelector('#hover__hover-styles').classList.remove('show');
 }

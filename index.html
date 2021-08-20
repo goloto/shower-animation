@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/material/styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         .shower {
             --slide-ratio: calc(4 / 3);
@@ -18,25 +19,24 @@
         <p>Лига Цифровой Экономики</p>
     </header>
 
-    <section class="slide">
+    <section class="slide slide__hover">
         <h2>Hover</h2>
 
         <div class="rows">
             <div class="row">
-                <div id="regular-styles">
+                <div id="hover__regular-styles">
                     <code-block>
                         <code><span class="css_selector">button</span> {</code>
                         <code-offset>
                             <code><span class="css_property">padding</span>: <span class="css_numeric">10</span>px;</code>
                             <code><span class="css_property">background-color</span>: aquamarine;</code>
                             <code><span class="css_property">border-radius</span>: <span class="css_numeric">4</span>px;</code>
-                            <code><span class="css_property">cursor</span>: pointer;</code>
                         </code-offset>
                         <code>}</code>
                     </code-block>
                 </div>
 
-                <div id="hover-styles">
+                <div id="hover__hover-styles">
                     <code-block>
                         <code><span class="css_selector">button<mark>:hover</mark></span> {</code>
                         <code-offset>
@@ -47,18 +47,127 @@
                 </div>
             </div>
             <div class="row row_centered">
-                <button onmouseover="showHoverStyles()" onmouseleave="hideHoverStyles()">Hover me!</button>
+                <button class="hover__button" onmouseover="showHoverStyles()" onmouseleave="hideHoverStyles()">Hover me!</button>
             </div>
         </div>
 
         <script src="slides/Hover/scripts.js"></script>
         <link rel="stylesheet" href="slides/Hover/styles.css">
+    </section>
 
-        <style>
-            #hover-styles {
-                opacity: 0;
-            }
-        </style>
+    <section class="slide slide__transition">
+        <h2>Transition</h2>
+
+        <div class="rows">
+            <div class="row">
+                <div id="transition__regular-styles">
+                    <code-block>
+                        <code><span class="css_selector">button</span> {</code>
+                        <code-offset>
+                            <code><span class="css_property">padding</span>: <span class="css_numeric">10</span>px;</code>
+                            <code><span class="css_property">background-color</span>: aquamarine;</code>
+                            <code><span class="css_property">border-radius</span>: <span class="css_numeric">4</span>px;</code>
+                            <code>
+                                <mark>
+                                    <span class="css_property">transition</span>: all <span class="span css_numeric">2</span>s ease-in
+                                </mark>
+                            </code>
+                        </code-offset>
+                        <code>}</code>
+                    </code-block>
+                </div>
+
+                <div id="transition__hover-styles">
+                    <code-block>
+                        <code><span class="css_selector">button:hover</span> {</code>
+                        <code-offset>
+                            <code><span class="css_property">background-color</span>: mediumaquamarine;</code>
+                        </code-offset>
+                        <code>}</code>
+                    </code-block>
+                </div>
+            </div>
+            <div class="row row_centered">
+                <button class="transition__button" onmouseover="showTransitionStyles()" onmouseleave="hideTransitionStyles()">Hover me!</button>
+            </div>
+        </div>
+
+        <script src="slides/Transition/scripts.js"></script>
+        <link rel="stylesheet" href="slides/Transition/styles.css">
+    </section>
+
+    <section class="slide">
+        <h2>Transition</h2>
+        <h3>Параметры</h3>
+        
+        <ul>
+            <li><code><span class="css_property">transition-property</span></code></li>
+            <li><code><span class="css_property">transition-duration</span></code></li>
+            <li><code><span class="css_property">transition-timing-function</span></code></li>
+            <li><code><span class="css_property">transition-delay</span></code></li>
+        </ul>
+
+        <code-block>
+            <code><span class="css_selector">div</span> {</code>
+            <code-offset>
+                <code><span class="css_property">transition</span>: [property] [duration] [timing-function] [delay];</code>
+            </code-offset>
+            <code>}</code>
+        </code-block>
+
+    </section>
+
+    <section class="slide slide__transition-duration">
+        <h2>Transition</h2>
+        <h3><code><span class="css_property">transition-duration</span></code></h3>
+
+        <div class="rows">
+            <div class="row">
+                <code-block>
+                    <code-block>
+                        <code><span class="css_selector">.button</span> {</code>
+                        <code-offset>
+                            <code><span class="css_comment">/.../</span></code>
+                            <code>
+                                <span class="css_property">transition</span>: all <mark><span class="css_numeric"><input onchange="changeDuration()" value="1" min="1" max="9" autofocus="true" type="number"></span>s</mark> ease-in;
+                            </code>
+                        </code-offset>
+                        <code>}</code>
+                    </code-block>
+                </code-block>
+            </div>
+            <div class="row row_centered">
+                <button>Hover me!</button>
+            </div>
+        </div>
+
+        <script src="slides/Transition_transition-duration/scripts.js"></script>
+        <link rel="stylesheet" href="slides/Transition_transition-duration/styles.css">
+    </section>
+
+    <section class="slide">
+        <h2>Transition</h2>
+        <h3><code><span class="css_property">transition-property</span></code></h3>
+
+
+    </section>
+
+    <section class="slide">
+        <h2>Transform</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Scale</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Rotate</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Flex</h2>
+
+
     </section>
 
     <footer class="badge">
