@@ -1,0 +1,30 @@
+.columns {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: max-content;
+}
+
+.column {
+    margin: auto 0;
+}
+
+.column > * {
+    margin: 20px 0;
+}
+
+.rows {
+    display: grid;
+    grid-template-rows: 2.5fr 1fr;
+}
+
+.row {
+
+}
+
+.row_centered {
+    margin: 0 auto;
+}
+
+.row > * {
+    margin: 20px 0;
+}

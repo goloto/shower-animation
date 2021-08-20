@@ -1,4 +1,4 @@
-.slide__hover button{
+button.aqua-button {
     width: 240px;
     height: 100px;
     font-size: 40px;
@@ -10,10 +10,6 @@
     cursor: pointer;
 }
 
-.slide__hover button:hover {
+button.aqua-button:hover {
     background-color: mediumaquamarine;
-}
-
-#hover__hover-styles {
-    opacity: 0;
 }
