@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>CSS-анимации</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/material/styles/styles.css">
@@ -14,12 +14,51 @@
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>CSS-анимации</h1>
+        <p>Лига Цифровой Экономики</p>
     </header>
 
     <section class="slide">
-        <!-- Create your first slide -->
+        <h2>Hover</h2>
+
+        <div class="rows">
+            <div class="row">
+                <div id="regular-styles">
+                    <code-block>
+                        <code><span class="css_selector">button</span> {</code>
+                        <code-offset>
+                            <code><span class="css_property">padding</span>: <span class="css_numeric">10</span>px;</code>
+                            <code><span class="css_property">background-color</span>: aquamarine;</code>
+                            <code><span class="css_property">border-radius</span>: <span class="css_numeric">4</span>px;</code>
+                            <code><span class="css_property">cursor</span>: pointer;</code>
+                        </code-offset>
+                        <code>}</code>
+                    </code-block>
+                </div>
+
+                <div id="hover-styles">
+                    <code-block>
+                        <code><span class="css_selector">button<mark>:hover</mark></span> {</code>
+                        <code-offset>
+                            <code><span class="css_property">background-color</span>: mediumaquamarine;</code>
+                        </code-offset>
+                        <code>}</code>
+                    </code-block>
+                </div>
+            </div>
+            <div class="row row_centered">
+                <button onmouseover="showHoverStyles()" onmouseleave="hideHoverStyles()">Hover me!</button>
+            </div>
+        </div>
+
+        <script src="slides/Hover/scripts.js"></script>
+        <link rel="stylesheet" href="slides/Hover/styles.css">
+
+        <style>
+            #hover-styles {
+                opacity: 0;
+            }
+        </style>
     </section>
 
     <footer class="badge">
