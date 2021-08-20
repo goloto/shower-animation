@@ -2,8 +2,12 @@
     transition: .3s ease-in;
 }
 
-.slide__transition-duration .aqua-button, .slide__transition-delay .aqua-button {
+.slide__transition-duration .aqua-button {
     transition: 1s ease-in;
+}
+
+.slide__transition-delay .aqua-button {
+    transition: 1s ease-in 1s;
 }
 
 #transition__hover-styles {
