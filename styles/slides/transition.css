@@ -1,117 +1,117 @@
 .aqua-button {
-    transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 
 .slide__transition-duration .aqua-button {
-    transition: 1s ease-in;
+  transition: 1s ease-in;
 }
 
 .slide__transition-delay .aqua-button {
-    transition: 1s ease-in 1s;
+  transition: 1s ease-in 1s;
 }
 
 #transition__hover-styles {
-    opacity: 0;
-    transition: all .2s ease-in;
+  opacity: 0;
+  transition: all .2s ease-in;
 }
 
 .slide__transition-duration input, .slide__transition-delay input {
-    width: 33px;
-    font-size: 24px;
-    font-family: 'Roboto';
-    height: 22px;
-    color: inherit;
-    font-weight: inherit;
-    border: 2px solid black;
-    background-color: inherit;
-    border-radius: 4px;
+  width: 33px;
+  font-size: 24px;
+  font-family: 'Roboto';
+  height: 22px;
+  color: inherit;
+  font-weight: inherit;
+  border: 2px solid black;
+  background-color: inherit;
+  border-radius: 4px;
 }
 
 .slide__transition-time-function .function {
-    display: flex;
-    width: max-content;
-    animation: 3s infinite alternate;
+  display: flex;
+  width: max-content;
+  animation: 3s infinite alternate;
 }
 
 .slide__transition-time-function .function_linear {
-    animation-timing-function: linear;
-    animation-name: functions-moving-linear;
+  animation-timing-function: linear;
+  animation-name: functions-moving-linear;
 }
 
 .slide__transition-time-function .function_ease-out {
-    animation-timing-function: ease-out;
-    animation-name: functions-moving-ease-out;
+  animation-timing-function: ease-out;
+  animation-name: functions-moving-ease-out;
 }
 
 .slide__transition-time-function .function_ease-in {
-    animation-timing-function: ease-in;
-    animation-name: functions-moving-ease-in;
+  animation-timing-function: ease-in;
+  animation-name: functions-moving-ease-in;
 }
 
 .slide__transition-time-function .function_ease-in-out {
-    animation-timing-function: ease-in-out;
-    animation-name: functions-moving-ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-name: functions-moving-ease-in-out;
 }
 
 .slide__transition-time-function .line {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .slide__transition-time-function .line .square {
-    border: solid black;
-    border-width: 0 1px 2px 1px;
-    height: 10px;
+  border: solid black;
+  border-width: 0 1px 2px 1px;
+  height: 10px;
 }
 
 .slide__transition-time-function .line .square:first-of-type {
-    border-width: 0 1px 2px 2px;
+  border-width: 0 1px 2px 2px;
 }
 
 .slide__transition-time-function .line .square:last-of-type {
-    border-width: 0 2px 2px 1px;
+  border-width: 0 2px 2px 1px;
 }
 
 @keyframes functions-moving-linear {
-    from {
-        margin-left: 0;
-        margin-right: 86%;
-    }
-    to {
-        margin-left: 86%;
-        margin-right: 0;
-    }
+  from {
+    margin-left: 0;
+    margin-right: 86%;
+  }
+  to {
+    margin-left: 86%;
+    margin-right: 0;
+  }
 }
 
 @keyframes functions-moving-ease-out {
-    from {
-        margin-left: 0;
-        margin-right: 82.2%;
-    }
-    to {
-        margin-left: 82.2%;
-        margin-right: 0;
-    }
+  from {
+    margin-left: 0;
+    margin-right: 82.2%;
+  }
+  to {
+    margin-left: 82.2%;
+    margin-right: 0;
+  }
 }
 
 @keyframes functions-moving-ease-in {
-    from {
-        margin-left: 0;
-        margin-right: 84%;
-    }
-    to {
-        margin-left: 84%;
-        margin-right: 0;
-    }
+  from {
+    margin-left: 0;
+    margin-right: 84%;
+  }
+  to {
+    margin-left: 84%;
+    margin-right: 0;
+  }
 }
 
 @keyframes functions-moving-ease-in-out {
-    from {
-        margin-left: 0;
-        margin-right: 76.5%;
-    }
-    to {
-        margin-left: 76.5%;
-        margin-right: 0;
-    }
+  from {
+    margin-left: 0;
+    margin-right: 76.5%;
+  }
+  to {
+    margin-left: 76.5%;
+    margin-right: 0;
+  }
 }

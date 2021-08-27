@@ -4,10 +4,10 @@
 @import 'headers.css';
 
 mark {
-    font-weight: 600;
-    padding: .1em 0 !important;
+  font-weight: 600;
+  padding: .1em 0 !important;
 }
 
 .show {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }

@@ -1,15 +1,15 @@
 button.aqua-button {
-    width: 240px;
-    height: 100px;
-    font-size: 40px;
-    margin: auto 0;
-    padding: 10px;
-    background-color: aquamarine;
-    border-style: none;
-    border-radius: 8px;
-    cursor: pointer;
+  width: 240px;
+  height: 100px;
+  font-size: 40px;
+  margin: auto 0;
+  padding: 10px;
+  background-color: aquamarine;
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 button.aqua-button:hover {
-    background-color: mediumaquamarine;
+  background-color: mediumaquamarine;
 }

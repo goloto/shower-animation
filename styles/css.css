@@ -1,15 +1,15 @@
 span.css_numeric {
-    color: cornflowerblue;
+  color: cornflowerblue;
 }
 
 span.css_property {
-    color: mediumvioletred;
+  color: mediumvioletred;
 }
 
 span.css_selector {
-    color: seagreen;
+  color: seagreen;
 }
 
 span.css_comment {
-    color: gray;
+  color: gray;
 }

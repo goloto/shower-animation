@@ -1,20 +1,20 @@
 code-block {
-    background-color: #eeeeee;
-    /*background: linear-gradient(#eeeeee, #dbdbdb);*/
-    border-radius: 6px;
-    /*border-right: .1em solid #dbdbdb;*/
-    /*border-bottom: .1em solid #dbdbdb;*/
-    padding: .4em;
-    display: flex;
-    flex-direction: column;
+  background-color: #eeeeee;
+  /*background: linear-gradient(#eeeeee, #dbdbdb);*/
+  border-radius: 6px;
+  /*border-right: .1em solid #dbdbdb;*/
+  /*border-bottom: .1em solid #dbdbdb;*/
+  padding: .4em;
+  display: flex;
+  flex-direction: column;
 }
 
 code-offset {
-    padding: 0 0 0 2em;
-    display: flex;
-    flex-direction: column;
+  padding: 0 0 0 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 code-block code {
-    background-color: initial !important;
+  background-color: initial !important;
 }
