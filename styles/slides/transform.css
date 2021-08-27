@@ -1,0 +1,89 @@
+.slide__transform-rotate .clock {
+  height: 200px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: solid 0;
+  border-radius: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide__transform-rotate .clock .separators {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  position: absolute;
+  top: calc(50% - 1px);
+}
+
+.slide__transform-rotate .clock .separators.separators_horizontal {
+
+}
+
+.slide__transform-rotate .clock .separators.separators.separators_vertical {
+  transform: rotate(90deg);
+}
+
+.slide__transform-rotate .clock .separator {
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.slide__transform-rotate .clock .center {
+  z-index: 50;
+  background-color: black;
+  border-radius: 6px;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: calc(50% - 6px);
+  top: calc(50% - 6px);
+}
+
+.slide__transform-rotate .clock .arrow {
+  left: 7px;
+  position: absolute;
+  width: 186px;
+  border: solid 0;
+  border-radius: 10px;
+}
+
+.slide__transform-rotate .clock .arrow .empty-arrow,
+.slide__transform-rotate .clock .arrow .full-arrow {
+  width: 50%;
+  border-radius: 6px;
+}
+
+.slide__transform-rotate .clock .arrow.arrow_hours {
+  top: calc(50% - 2px);
+  transform: rotate(45deg);
+  z-index: 30;
+}
+
+.slide__transform-rotate .clock .arrow.arrow_hours .full-arrow {
+  height: 4px;
+  background-color: black;
+}
+
+.slide__transform-rotate .clock .arrow.arrow_minutes {
+  top: calc(50% - 1px);
+  z-index: 20;
+}
+
+.slide__transform-rotate .clock .arrow.arrow_minutes .full-arrow {
+  height: 2px;
+  background-color: black;
+}
+
+.slide__transform-rotate .clock .arrow.arrow_seconds {
+  top: calc(50% - 0.5px);
+  transform: rotate(.2turn);
+  z-index: 10;
+}
+
+.slide__transform-rotate .clock .arrow.arrow_seconds .full-arrow {
+  height: 1px;
+  background-color: red;
+}

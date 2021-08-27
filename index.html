@@ -123,7 +123,7 @@
     <section class="slide">
         <div class="complex-header">
             <h2>Transition</h2>
-            <h3>Параметры</h3>
+            <h3>Свойства</h3>
         </div>
         
         <ul>
@@ -290,11 +290,63 @@
         </div>
     </section>
 
-    <section class="slide">
+    <section class="slide slide__transform-rotate">
         <span class="complex-header">
-            <h2>Трансформация</h2>
-            <h3><code><span class="css_property">transform</span></code></h3>
+            <h2>Transform</h2>
+            <h3><code><span class="css_property">rotate</span></code></h3>
         </span>
+
+        <div class="rows">
+            <div class="row">
+                <code-block>
+                    <code><span class="css_selector">.seconds-arrow</span> {</code>
+                    <code-offset>
+                        <code><span class="css_comment">/.../</span></code>
+                        <code><span class="css_property">transform</span>: rotate(<span id="seconds" class="css_numeric">45</span>deg)</code>
+                    </code-offset>
+                    <code>}</code>
+                    <code><span class="css_selector">.minutes-arrow</span> {</code>
+                    <code-offset>
+                        <code><span class="css_comment">/.../</span></code>
+                        <code><span class="css_property">transform</span>: rotate(<span id="minutes" class="css_numeric">0.5</span>turn)</code>
+                    </code-offset>
+                    <code>}</code>
+                </code-block>
+            </div>
+            <div class="row">
+                <div class="clock">
+                    <div class="center"></div>
+                    <div class="separators separators_vertical">
+                        <div class="separator"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="separators separators_horizontal">
+                        <div class="separator"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="arrow arrow_hours">
+                        <div class="empty-arrow"></div>
+                        <div class="full-arrow"></div>
+                    </div>
+                    <div class="arrow arrow_minutes">
+                        <div class="empty-arrow"></div>
+                        <div class="full-arrow"></div>
+                    </div>
+                    <div class="arrow arrow_seconds">
+                        <div class="empty-arrow"></div>
+                        <div class="full-arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="slide">
