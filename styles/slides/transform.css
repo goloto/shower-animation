@@ -58,7 +58,7 @@
 
 .slide__transform-rotate .clock .arrow.arrow_hours {
   top: calc(50% - 2px);
-  transform: rotate(45deg);
+  transform: rotate(90deg);
   z-index: 30;
 }
 
@@ -69,6 +69,7 @@
 
 .slide__transform-rotate .clock .arrow.arrow_minutes {
   top: calc(50% - 1px);
+  transform: rotate(90deg);
   z-index: 20;
 }
 
@@ -79,7 +80,7 @@
 
 .slide__transform-rotate .clock .arrow.arrow_seconds {
   top: calc(50% - 0.5px);
-  transform: rotate(.2turn);
+  transform: rotate(.25turn);
   z-index: 10;
 }
 
